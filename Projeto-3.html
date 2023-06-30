@@ -9,21 +9,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a01d606cc8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 
-<!-- BARRA DE NAVEGAÇÃO -->
-    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
+<!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
+    <header class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-3 shadow" style="max-height: 72px;">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"> <b>Meu Painel</b> </a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <input class="form-control form-control-dark w-50" type="text" placeholder="Buscar" aria-label="Buscar">
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="#">Sign out</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Olá, User123</a>
+                <ul class="dropdown-menu" data-bs-popper="static">
+                    <li><a class="dropdown-item" href="#">Configurações</a></li>
+                    <li><a class="dropdown-item" href="#">Notificações</a></li>
+                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -32,43 +38,37 @@
 <!-- CONTEUDO DO MEIO --> 
     <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-                <div class="position-sticky pt-3">
+                <div class="pt-3">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">
-                        <span data-feather="home"></span>
-                        Dashboard
-                    </a>
+                        <a class="nav-link active text-dark" aria-current="page" href="#">
+                            <span data-feather="home" class="fas fa-house"></span>
+                            Painel
+                        </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span data-feather="file"></span>
-                        Orders
-                    </a>
+                        <a class="nav-link text-dark" href="#">
+                            &nbsp;<span data-feather="file" class="fas fa-file"></span>
+                            Ordens
+                        </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span data-feather="shopping-cart"></span>
-                        Products
-                    </a>
+                        <a class="nav-link text-dark" href="#">
+                            <span data-feather="shopping-cart" class="fas fa-shopping-cart"></span>
+                            Produtos
+                        </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span data-feather="users"></span>
-                        Customers
-                    </a>
+                        <a class="nav-link text-dark" href="#">
+                            <span data-feather="users" class="fas fa-users"></span>
+                            Clientes
+                        </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span data-feather="bar-chart-2"></span>
-                        Reports
-                    </a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span data-feather="layers"></span>
-                        Integrations
-                    </a>
+                        <a class="nav-link text-dark" href="#">
+                            &nbsp;<span data-feather="bar-chart-2" class="fas fa-bar-chart"></span>
+                            Relatórios
+                        </a>
                     </li>
                 </ul>
         
@@ -107,7 +107,7 @@
                 </div>
             </nav>
                 
-            <div class="col-10">
+            <div class="col-10 p-4">
                 <a href="" class="bg-warning"> Inicio/Painel </a>
                 <h2> Painel </h2>
                 <p> Essa é a pagina de um painel administrativo.</p>
@@ -213,6 +213,20 @@
 
             </div>
     </div>
+
+<!-- CONTEUDO DO FOOTER --> 
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+        </footer>
+      </div>
 </body>
 
 </html>
